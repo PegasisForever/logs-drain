@@ -30,12 +30,6 @@ services:
       - "12000:12000"
     volumes:
       - ./data:/data
-    healthcheck:
-      test: ["CMD", "wget", "-q", "-O-", "http://127.0.0.1:12000/api/health"]
-      interval: 30s
-      timeout: 5s
-      retries: 3
-      start_period: 5s
 ```
 
 ```sh
