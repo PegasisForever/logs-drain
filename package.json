@@ -1,0 +1,12 @@
+{
+  "name": "logs-drain",
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "dev:server": "bun --cwd packages/server dev",
+    "dev:web": "bun --cwd packages/web dev",
+    "build:web": "bun --cwd packages/web build",
+    "start": "bun run packages/server/src/index.ts"
+  }
+}

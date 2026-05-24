@@ -1,0 +1,9 @@
+{
+  "name": "@logs-drain/server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot src/index.ts"
+  },
+  "dependencies": {}
+}
